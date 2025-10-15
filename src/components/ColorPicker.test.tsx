@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import ColorPicker from './ColorPicker'; // Asegúrate de que la ruta sea correcta
+import ColorPisker from './ColorPicker'; // Asegúrate de que la ruta sea correcta
 import '@testing-library/jest-dom'; // Para usar las aserciones como toHaveTextContent
 
 // Simular localStorage en los tests
