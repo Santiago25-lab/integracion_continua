@@ -11,7 +11,7 @@ describe('CountdownTimer', () => {
     const timerElement = screen.getByTestId('countdown-timer');
     
     // Verifica que el tiempo inicial sea el que le pasas como prop
-    expect(timerElemento).toHaveTextContent('10');
+    expect(timerElement).toHaveTextContent('10');
   });
 
   test('disminuye en intervalos de un segundo', () => {
