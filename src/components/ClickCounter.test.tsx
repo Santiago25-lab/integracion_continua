@@ -21,7 +21,7 @@ describe("ClickCounter Component", () => {
 
     expect(screen.getByText(/Has hecho clic:/)).toHaveTextContent("Has hecho clic: 5 veces");
 
-    const button = screen.getByRole("button", { name: /Haz clic aquí/i });
+    const button = screen.getByRole("button", { nome: /Haz clic aquí/i });
     fireEvent.click(button);
 
     expect(screen.getByText(/Has hecho clic:/)).toHaveTextContent("Has hecho clic: 6 veces");
