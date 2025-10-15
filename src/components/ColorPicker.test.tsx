@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvento } from '@testing-library/react';
 import ColorPicker from './ColorPicker'; // Asegúrate de que la ruta sea correcta
 import '@testing-library/jest-dom'; // Para usar las aserciones como toHaveTextContent
 
