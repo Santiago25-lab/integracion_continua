@@ -14,6 +14,12 @@ import ValidContrasena from "../views/ValidContrasena";
 import ContadorClics from "../views/ContadorClics";
 import ListaTareas from "../views/ListaTareas";
 
+// Views for Digital Clock, Countdown Timer, and ColorPicker
+import DigitalClockView from "../views/DigitalClockView"; // Ruta para el Reloj Digital
+import CountdownTimerView from "../views/CountdownTimerView"; // Ruta para el Contador Regresivo
+import ColorPickerView from "../views/ColorPickerView"; // Nueva ruta para el Color Picker
+import SearchList from "../views/SearchList"; // Importa la nueva vista del buscador
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -29,6 +35,12 @@ export default function AppRoutes() {
         <Route path="validcontrasena" element={<ValidContrasena />} />
         <Route path="contadorclics" element={<ContadorClics />} />
         <Route path="listareas" element={<ListaTareas />} />
+
+        {/* Nuevas rutas para el Reloj Digital, el Contador Regresivo, el ColorPicker y el Buscador */}
+        <Route path="digital-clock" element={<DigitalClockView />} />
+        <Route path="countdown-timer" element={<CountdownTimerView />} />
+        <Route path="colorpicker" element={<ColorPickerView />} />
+        <Route path="searchlist" element={<SearchList />} /> {/* Nueva ruta del Buscador */}
       </Route>
     </Routes>
   );
